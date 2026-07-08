@@ -1,0 +1,51 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/bun-catalog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/monorepo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/monorepo/packages/bar
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/monorepo/packages/foo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/pkgmode
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/pnpm-catalog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/single
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/fixtures/yarn-catalog
+    schedule:
+      interval: daily
